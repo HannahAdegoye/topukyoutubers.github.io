@@ -219,9 +219,9 @@ SELECT
 
 FROM
     top_uk_youtubers_2024
-
-![Required-Columns](assets/images/required_columns.png)
 ```
+![Required-Columns](assets/images/required_columns.png)
+
 
 
 ### Create the SQL view 
@@ -246,9 +246,9 @@ SELECT
 -- 3.
 FROM
     top_uk_youtubers_2024
-
-![Views-in-SQL](assets/images/views.png)
 ```
+![Views-in-SQL](assets/images/views.png)
+
 
 
 # Testing 
