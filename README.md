@@ -42,26 +42,23 @@
 
 - What is the key pain point? 
 
-The Head of Marketing wants to find out who the top YouTubers are in 2024 to decide on which YouTubers would be best to run marketing campaigns throughout the rest of the year.
+To strategize influencer marketing campaigns for the remainder of 2024, the Head of Marketing is seeking to identify the most prominent YouTubers of the year thus far.
 
 
 - What is the ideal solution? 
 
-To create a dashboard that provides insights into the top UK YouTubers in 2024 that includes their 
+The optimal approach would be to develop a dashboard that offers comprehensive analytics on the leading UK-based YouTubers in 2024, featuring key metrics such as their
+ 
 - subscriber count
 - total views
 - total videos, and
 - engagement metrics
 
-This will help the marketing team make informed decisions about which YouTubers to collaborate with for their marketing campaigns.
+This will help the marketing team make informed decisions about which YouTubers to collaborate with for marketing campaignsgns.
 
 ## User story 
 
-As the Head of Marketing, I want to use a dashboard that analyses YouTube channel data in the UK . 
-
-This dashboard should allow me to identify the top performing channels based on metrics like subscriber base and average views. 
-
-With this information, I can make more informed decisions about which Youtubers are right to collaborate with, and therefore maximize how effective each marketing campaign is.
+As the Head of Marketing, I require a dashboard that analyses YouTube channel data specific to the UK market. This dashboard should empower me to pinpoint the top-performing channels based on key performance indicators such as subscriber count and average viewership. By leveraging these insights, I can make well-informed decisions regarding the most suitable YouTubers to collaborate with, thereby maximizing the effectiveness of each marketing campaign.
 
 
 # Data source 
@@ -90,11 +87,11 @@ The data is sourced from Kaggle (an Excel extract), [see here to find it.](https
 
 
 # Design 
+To align the dashboard with the specified requirements, we need to determine the questions it should address.
 
 ## Dashboard components required 
-- What should the dashboard contain based on the requirements provided?
-
-To understand what it should contain, we need to figure out what questions we need the dashboard to answer:
+  
+To identify the necessary components, we must first ascertain the questions the dashboard needs to answer:
 
 1. Who are the top 10 YouTubers with the most subscribers?
 2. Which 3 channels have uploaded the most videos?
@@ -103,12 +100,11 @@ To understand what it should contain, we need to figure out what questions we ne
 5. Which 3 channels have the highest views per subscriber ratio?
 6. Which 3 channels have the highest subscriber engagement rate per video uploaded?
 
-For now, these are some of the questions we need to answer, this may change as we progress down our analysis. 
+For now, these are some of the questions we need to answer, this may change as we progress. 
 
 
 ## Dashboard mockup
 
-- What should it look like? 
 
 Some of the data visuals that may be appropriate in answering our questions include:
 
@@ -139,7 +135,7 @@ Some of the data visuals that may be appropriate in answering our questions incl
 
 ## Pseudocode
 
-- What's the general approach in creating this solution from start to finish?
+The general approach in creating this solution from start to finish includes but is not limited to the following steps:
 
 1. Get the data
 2. Explore the data in Excel
@@ -155,9 +151,6 @@ Some of the data visuals that may be appropriate in answering our questions incl
 
 This is the stage where you have a scan of what's in the data, errors, inconcsistencies, bugs, weird and corrupted characters etc  
 
-
-- What are your initial observations with this dataset? What's caught your attention so far? 
-
 1. There are at least 4 columns that contain the data we need for this analysis, which signals we have everything we need from the file without needing to contact the client for any more data. 
 2. The first column contains the channel ID with what appears to be channel IDS, which are separated by a @ symbol - we need to extract the channel names from this.
 3. Some of the cells and header names are in a different language - we need to confirm if these columns are needed, and if so, we need to address them.
@@ -168,7 +161,6 @@ This is the stage where you have a scan of what's in the data, errors, inconcsis
 
 
 ## Data cleaning 
-- What do we expect the clean data to look like? (What should it contain? What contraints should we apply to it?)
 
 The aim is to refine our dataset to ensure it is structured and ready for analysis. 
 
@@ -196,7 +188,7 @@ And here is a tabular representation of the expected schema for the clean data:
 
 
 
-- What steps are needed to clean and shape the data into the desired format?
+- The steps needed to clean and shape the data into the desired format are as follows:
 
 1. Remove unnecessary columns by only selecting the ones you need
 2. Extract Youtube channel names from the first column
@@ -261,8 +253,6 @@ FROM
 
 # Testing 
 
-- What data quality and validation checks are you going to create?
-
 Here are the data quality tests conducted:
 
 ## Row count check
@@ -298,7 +288,7 @@ WHERE
     TABLE_NAME = 'view_uk_youtubers_2024'
 ```
 ### Output 
-![Column count check](assets/images/column check.png)
+![Column count check](assets/images/column_check.png)
 
 
 
@@ -437,9 +427,8 @@ RETURN viewsPerSubscriber
 
 ## Findings
 
-- What did we find?
 
-For this analysis, we're going to focus on the questions below to get the information we need for our marketing client - 
+For this analysis, we are going to focus on the questions below to get the information we need for our marketing client. - 
 
 Here are the key questions we need to answer for our marketing client: 
 1. Who are the top 10 YouTubers with the most subscribers?
@@ -518,7 +507,7 @@ Here are the key questions we need to answer for our marketing client:
 
 ### Notes
 
-For this analysis, we'll prioritize analysing the metrics that are important in generating the expected ROI for our marketing client, which are the YouTube channels wuth the most 
+For this analysis, we will prioritize analysing the metrics that are important in generating the expected return on investment (ROI) for our marketing client, which are the YouTube channels with the most 
 
 - subscribers
 - total views
@@ -810,11 +799,6 @@ ORDER BY
 
 ## Discovery
 
-- What did we learn?
-
-We discovered that 
-
-
 1. NoCopyrightSOunds, Dan Rhodes and DanTDM are the channnels with the most subscribers in the UK
 2. GRM Daily, Man City and Yogscast are the channels with the most videos uploaded
 3. DanTDM, Dan RHodes and Mister Max are the channels with the most views
@@ -825,7 +809,6 @@ We discovered that
 
 ## Recommendations 
 
-- What do you recommend based on the insights gathered? 
   
 1. Dan Rhodes is the best YouTube channel to collaborate with if we want to maximize visbility because this channel has the most YouTube subscribers in the UK
 2. Although GRM Daily, Man City and Yogcasts are regular publishers on YouTube, it may be worth considering whether collaborating with them with the current budget caps are worth the effort, as the potential return on investments is significantly lower compared to the other channels.
