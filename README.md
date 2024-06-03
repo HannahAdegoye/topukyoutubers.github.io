@@ -220,7 +220,7 @@ SELECT
 FROM
     top_uk_youtubers_2024
 
-[Required-Columns](assets/images/required_columns.png)
+![Required-Columns](assets/images/required_columns.png)
 ```
 
 
@@ -247,7 +247,7 @@ SELECT
 FROM
     top_uk_youtubers_2024
 
-[Views-in-SQL](assets/images/views.png)
+![Views-in-SQL](assets/images/views.png)
 ```
 
 
@@ -337,7 +337,7 @@ HAVING
     COUNT(*) > 1;
 ```
 ### Output
-![Duplicate count check](assets/images/duplicate count check.png)
+![Duplicate count check](assets/images/duplicate_check.png)
 
 # Visualization 
 
