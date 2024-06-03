@@ -227,6 +227,8 @@ SELECT
 
 FROM
     top_uk_youtubers_2024
+
+[Required-Columns](assets/images/relevant columns.png)
 ```
 
 
@@ -253,6 +255,7 @@ SELECT
 FROM
     top_uk_youtubers_2024
 
+[Views-in-SQL](assets/images/creating views in excel.png)
 ```
 
 
@@ -275,7 +278,7 @@ FROM
 
 ```
 
-![Row count check](assets/images/row checks.png)
+![Row count check](assets/images/row_checks.png)
 
 
 
@@ -295,7 +298,7 @@ WHERE
     TABLE_NAME = 'view_uk_youtubers_2024'
 ```
 ### Output 
-![Column count check](assets/images/2_column_count_check.png)
+![Column count check](assets/images/2_column check.png)
 
 
 
@@ -316,7 +319,7 @@ WHERE
     TABLE_NAME = 'view_uk_youtubers_2024';
 ```
 ### Output
-![Data type check](assets/images/3_data_type_check.png)
+![Data type check](assets/images/data_type_check.png)
 
 
 ## Duplicate count check
@@ -344,7 +347,7 @@ HAVING
     COUNT(*) > 1;
 ```
 ### Output
-![Duplicate count check](assets/images/4_duplicate_records_check.png)
+![Duplicate count check](assets/images/duplicate count check.png)
 
 # Visualization 
 
@@ -353,7 +356,7 @@ HAVING
 
 - What does the dashboard look like?
 
-![GIF of Power BI Dashboard](assets/images/top_uk_youtubers_2024.gif)
+![GIF of Power BI Dashboard](assets/images/Power_BI_Dashboard.png)
 
 This shows the Top UK Youtubers in 2024 so far. 
 
