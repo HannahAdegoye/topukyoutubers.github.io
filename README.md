@@ -1,9 +1,8 @@
-# Analyzing YouTube Influencer Marketing: Metrics and Profitability
-
-# Data Portfolio: Excel to Power BI 
+# Data Portfolio: Analyzing YouTube Influencer Marketing: Metrics and Profitability
 
 
-![excel-to-powerbi-animated-diagram](assets/images/kaggle_to_powerbi.gif)
+
+![excel-to-powerbi-animated-diagram](assets/images/Picture1.jpg)
 
 
 
