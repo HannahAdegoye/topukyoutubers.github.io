@@ -228,7 +228,7 @@ SELECT
 FROM
     top_uk_youtubers_2024
 
-[Required-Columns](assets/images/relevant columns.png)
+[Required-Columns](assets/images/required_columns.png)
 ```
 
 
@@ -255,7 +255,7 @@ SELECT
 FROM
     top_uk_youtubers_2024
 
-[Views-in-SQL](assets/images/creating views in excel.png)
+[Views-in-SQL](assets/images/views.png)
 ```
 
 
@@ -278,7 +278,7 @@ FROM
 
 ```
 
-![Row count check](assets/images/row_checks.png)
+![Row count check](assets/images/Row_checks.png)
 
 
 
@@ -298,7 +298,7 @@ WHERE
     TABLE_NAME = 'view_uk_youtubers_2024'
 ```
 ### Output 
-![Column count check](assets/images/2_column check.png)
+![Column count check](assets/images/column check.png)
 
 
 
@@ -319,7 +319,7 @@ WHERE
     TABLE_NAME = 'view_uk_youtubers_2024';
 ```
 ### Output
-![Data type check](assets/images/data_type_check.png)
+![Data type check](assets/images/Data_type_check.png)
 
 
 ## Duplicate count check
